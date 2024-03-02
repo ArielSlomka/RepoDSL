@@ -1,8 +1,50 @@
-h1 {
-    background-color: purple;
-    color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p {
-    color: green;
+.header {
+    background-image: url('../img/imgHeader.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 1200px;
 }
+
+.navBar {
+    background-color: grey;
+}
+
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar ul li {
+    display: inline;
+}
+
+.navBar ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navBar ul li a:hover {
+    background-color: #555;
+}
+
+h1 {
+    font-size: 200px;
+    color: grey;
+    text-align: center;
+}
+
+h3 {
+    font-size: 100px;
+    color: grey;
+    text-align: center;
+}
+

@@ -9,6 +9,18 @@
   background-position: center;
   height: 1200px; }
 
+h1 {
+  font-size: 200px;
+  color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif; }
+
+h3 {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif; }
+
 .navBar {
   background-color: grey; }
 
@@ -28,13 +40,3 @@
 
 .navBar ul li a:hover {
   background-color: #555; }
-
-h1 {
-  font-size: 200px;
-  color: grey;
-  text-align: center; }
-
-h3 {
-  font-size: 100px;
-  color: grey;
-  text-align: center; }

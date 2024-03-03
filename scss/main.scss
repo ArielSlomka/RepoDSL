@@ -11,40 +11,44 @@
     height: 1200px;
 }
 
+    h1 {
+        font-size: 200px;
+        color: white;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    h3 {
+        font-size: 100px;
+        color: white;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
 .navBar {
     background-color: grey;
 }
 
-.navBar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    .navBar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-.navBar ul li {
-    display: inline;
-}
+    .navBar ul li {
+        display: inline;
+    }
 
-.navBar ul li a {
-    display: inline-block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-}
+    .navBar ul li a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+    }
 
 .navBar ul li a:hover {
     background-color: #555;
 }
 
-h1 {
-    font-size: 200px;
-    color: grey;
-    text-align: center;
-}
-
-h3 {
-    font-size: 100px;
-    color: grey;
-    text-align: center;
-}
 

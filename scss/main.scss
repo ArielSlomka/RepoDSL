@@ -11,33 +11,48 @@
     height: 1200px;
 }
 
-    h1 {
-        font-size: 200px;
-        color: white;
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
+    .titulos{
+        height: 800px;
     }
 
-    h3 {
+    h1{
+        font-size: 200px;
+        color: rgba(128, 128, 128, 0.75);
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 200px;
+    }
+
+    h3{
         font-size: 100px;
-        color: white;
+        color: rgba(128, 128, 128, 0.75);
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
     }
 
 
 .navBar {
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
+    text-align: center;
+    
+   
+    
 }
 
     .navBar ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+       
     }
 
     .navBar ul li {
         display: inline;
+        padding: 100px;
+       
+        
+        
+
     }
 
     .navBar ul li a {
@@ -45,6 +60,7 @@
         padding: 10px 20px;
         color: white;
         text-decoration: none;
+        
     }
 
 .navBar ul li a:hover {
@@ -52,3 +68,29 @@
 }
 
 
+.container {
+    display: flex; /* Utilizamos flexbox para alinear las cards */
+    justify-content: space-around; /* Distribuye el espacio alrededor de las cards */
+    background-color: #EFEBE5;
+}
+
+.card {
+    width: 200px; /* Ancho de cada card */
+    text-align: center; /* Centra el contenido dentro de la card */
+    margin-bottom: 20px; /* Espacio entre cada card */
+    flex: 1;
+    padding-top: 200px;
+}
+
+.card img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la card */
+    height: 250px;
+    
+}
+
+.descripcion {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    border: 1px solid black;
+    width: 200px;
+    justify-content: space-between;
+}

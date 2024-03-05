@@ -5,8 +5,12 @@
 }
 
 .header {
+<<<<<<< HEAD
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('../img/imgHeader.jpg');
+=======
     // chauchis
     background-image: url('../img/imgHeader.jpg');
+>>>>>>> main
     background-size: cover;
     background-position: center;
     height: 100vh; // la medida vh (viewport height) indica que el alto es proporcional a la altura de la ventana del navegador
@@ -17,17 +21,20 @@
 
     &__titulo {
         font-size: 200px;
-        color: rgba(128, 128, 128, 0.75);
+        color: rgb(255, 255, 255);
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
         padding-top: 200px;
+        text-shadow: -5px 6px 6px rgba(0,0,0,0.6);
     }
 
     &__subtitulo {
         font-size: 100px;
-        color: rgba(128, 128, 128, 0.75);
+        color: white;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
+
+        //holis
     }
 }
 

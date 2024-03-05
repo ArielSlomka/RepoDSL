@@ -7,71 +7,47 @@
   background-image: url("../img/imgHeader.jpg");
   background-size: cover;
   background-position: center;
-  height: 1200px; }
+  height: 100vh; }
+  .header .titulos {
+    height: 800px; }
+  .header__titulo {
+    font-size: 200px;
+    color: rgba(128, 128, 128, 0.75);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 200px; }
+  .header__subtitulo {
+    font-size: 100px;
+    color: rgba(128, 128, 128, 0.75);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; }
 
-.titulos {
-  height: 800px; }
-
-h1 {
-  font-size: 200px;
-  color: rgba(128, 128, 128, 0.75);
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  padding-top: 200px; }
-
-h3 {
-  font-size: 100px;
-  color: rgba(128, 128, 128, 0.75);
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif; }
-
-.navBar {
+.navbar {
   background-color: rgba(128, 128, 128, 0.5);
   text-align: center; }
-
-.navBar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-.navBar ul li {
-  display: inline;
-  padding: 100px; }
-
-.navBar ul li a {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none; }
-
-.navBar ul li a:hover {
-  background-color: #555; }
+  .navbar__lista {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .navbar__item {
+    display: inline;
+    padding: 100px; }
+    .navbar__item a {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none; }
+      .navbar__item a:hover {
+        background-color: #555; }
 
 .container {
-  display: flex;
-  /* Utilizamos flexbox para alinear las cards */
-  justify-content: space-around;
-  /* Distribuye el espacio alrededor de las cards */
-  background-color: #EFEBE5; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  padding: 120px 80px; }
 
-.card {
-  width: 200px;
-  /* Ancho de cada card */
-  text-align: center;
-  /* Centra el contenido dentro de la card */
-  margin-bottom: 20px;
-  /* Espacio entre cada card */
-  flex: 1;
-  padding-top: 200px; }
-
-.card img {
-  max-width: 100%;
-  /* Asegura que la imagen no exceda el ancho de la card */
-  height: 250px; }
-
-.descripcion {
-  margin-top: 10px;
-  /* Espacio entre la imagen y el texto */
-  border: 1px solid black;
-  width: 200px;
-  justify-content: space-between; }
+.card__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3/2; }

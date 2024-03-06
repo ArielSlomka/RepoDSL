@@ -5,88 +5,92 @@
 }
 
 .header {
-    background-image: url('../img/imgHeader.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('../img/imgHeader.jpg');
     background-size: cover;
     background-position: center;
-    height: 1200px;
-}
+    height: 100vh; // la medida vh (viewport height) indica que el alto es proporcional a la altura de la ventana del navegador
 
     .titulos{
         height: 800px;
     }
 
-    h1{
+    &__titulo {
         font-size: 200px;
-        color: rgba(128, 128, 128, 0.75);
+        color: rgb(255, 255, 255);
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
         padding-top: 200px;
+        text-shadow: -5px 6px 6px rgba(0,0,0,0.6);
     }
 
-    h3{
+    &__subtitulo {
         font-size: 100px;
-        color: rgba(128, 128, 128, 0.75);
+        color: white;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
+
+        //holis
     }
-
-
-.navBar {
-    background-color: rgba(128, 128, 128, 0.5);
-    text-align: center;
-    
-   
-    
 }
 
-    .navBar ul {
+.navbar {
+    background-color: rgba(128, 128, 128, 0.5);
+    text-align: center;
+
+    &__lista {
         list-style-type: none;
         margin: 0;
         padding: 0;
        
     }
 
-    .navBar ul li {
+    &__item {
         display: inline;
         padding: 100px;
        
-        
-        
-
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            
+            &:hover {
+                background-color: #555;
+            }
+        }
     }
-
-    .navBar ul li a {
-        display: inline-block;
-        padding: 10px 20px;
-        color: white;
-        text-decoration: none;
-        
-    }
-
-.navBar ul li a:hover {
-    background-color: #555;
 }
+
 
 
 .container {
-    display: grid; /* Utilizamos flexbox para alinear las cards */
-    grid-template-columns: (1fr 1fr 1fr);
-    background-color: #EFEBE5;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding: 120px 80px;
 }
 
 .card {
-    text-align: center;
-}
 
-.card img {
-    
-    
-}
+    &__image {
 
-.descripcion {
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
-    border: 1px solid black;
-    
-    
+
+        img {
+            // estas 3 propiedades van siempre juntas (o casi) y hacen que la imagen se adapte al tamaño del contenedor
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+
+            // relacion de aspecto - normaliza el tamaño de las imagenes seleccionadas
+            aspect-ratio: 3/2;
+        }
+    }
+
+    &__descripcion {
+        text-align: center;
+        // margin-top: 10px; /* Espacio entre la imagen y el texto */
+        // border: 1px solid black;
+        // width: 200px;
+        // justify-content: space-between;
+    }
 }

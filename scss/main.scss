@@ -69,28 +69,24 @@
 
 
 .container {
-    display: flex; /* Utilizamos flexbox para alinear las cards */
-    justify-content: space-around; /* Distribuye el espacio alrededor de las cards */
+    display: grid; /* Utilizamos flexbox para alinear las cards */
+    grid-template-columns: (1fr 1fr 1fr);
     background-color: #EFEBE5;
+    gap: 20px;
 }
 
 .card {
-    width: 200px; /* Ancho de cada card */
-    text-align: center; /* Centra el contenido dentro de la card */
-    margin-bottom: 20px; /* Espacio entre cada card */
-    flex: 1;
-    padding-top: 200px;
+    text-align: center;
 }
 
 .card img {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la card */
-    height: 250px;
+    
     
 }
 
 .descripcion {
     margin-top: 10px; /* Espacio entre la imagen y el texto */
     border: 1px solid black;
-    width: 200px;
-    justify-content: space-between;
+    
+    
 }

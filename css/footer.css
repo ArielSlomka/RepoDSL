@@ -1,0 +1,20 @@
+.footer {
+  background-color: #623E2A; }
+  .footer__title {
+    font-size: 60px;
+    color: #F4F1ED; }
+  .footer__boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  .footer__box {
+    border: 1px solid #F4F1ED; }
+    .footer__box h4 {
+      padding: 25px;
+      color: #F4F1ED;
+      font-size: 30px; }
+    .footer__box p {
+      padding: 25px;
+      color: #F4F1ED; }
+    .footer__box button {
+      padding: 20px;
+      margin: 25px; }

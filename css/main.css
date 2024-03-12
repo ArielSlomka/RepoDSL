@@ -10,54 +10,6 @@
   padding-left: 120px;
   padding-right: 120px; }
 
-.header {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("../img/imgHeader.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh; }
-  .header .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 175px 0 60px;
-    height: 100%; }
-  .header .titulos {
-    height: 800px; }
-  .header__titulo {
-    font-size: 180px;
-    color: white;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: -5px 6px 6px rgba(0, 0, 0, 0.6); }
-  .header__subtitulo {
-    font-size: 100px;
-    color: white;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: -5px 6px 6px rgba(0, 0, 0, 0.6); }
-
-.navbar {
-  text-align: center; }
-  .navbar__lista {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 0  120px; }
-  .navbar__item {
-    display: inline; }
-    .navbar__item a {
-      background-color: rgba(98, 62, 42, 0.8);
-      display: inline-block;
-      padding: 10px 20px;
-      color: white;
-      text-decoration: none;
-      transition: .5s;
-      border-radius: 5px; }
-      .navbar__item a:hover {
-        background-color: #555; }
-
 .tituloModuloCard {
   text-align: center;
   font-size: 50px;
@@ -96,24 +48,3 @@ main {
 .card p {
   padding: 20px;
   font-size: 18px; }
-
-.footer {
-  background-color: #623E2A; }
-  .footer__title {
-    font-size: 60px;
-    color: #F4F1ED; }
-  .footer__boxes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
-  .footer__box {
-    border: 1px solid #F4F1ED; }
-    .footer__box h4 {
-      padding: 25px;
-      color: #F4F1ED;
-      font-size: 30px; }
-    .footer__box p {
-      padding: 25px;
-      color: #F4F1ED; }
-    .footer__box button {
-      padding: 20px;
-      margin: 25px; }

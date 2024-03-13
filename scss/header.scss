@@ -10,6 +10,10 @@
         justify-content: space-between;
         padding: 175px 0 60px;
         height: 100%;
+
+        @media (max-width: 768px) {
+            padding: 50px 0; // Reducir el espacio vertical
+        }
     }
 
     &__titulos {
@@ -72,11 +76,6 @@
     .header {
         height: auto; // Ajustar la altura automáticamente
         padding: 80px 0; // Reducir el espacio vertical
-    
-  
-        .container {
-            padding: 50px 0; // Reducir el espacio vertical
-        }
   
         &__titulos {
             height: auto; // Ajustar la altura automáticamente
@@ -98,17 +97,16 @@
   
         .navbar__item {
             margin-bottom: 20px; // Agregar espacio entre los elementos de la lista
-      
 
-              a {
-                font-size: 200px;
-              }
+            a {
+                // font-size: 200px;
+            }
         }  
     }
-  }
+}
   
-  // Para tablets
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+// Para tablets
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .header {
       padding: 120px 0; // Ajustar el espacio vertical
     }
@@ -116,4 +114,4 @@
     .container {
       padding: 100px 0; // Ajustar el espacio vertical
     }
-  }
+}

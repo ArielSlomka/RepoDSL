@@ -52,21 +52,22 @@
     height: auto;
     padding: 80px 0; }
     .header .container {
-      padding: 50px 0; }
+      padding: 50px 0;
+      width: 100%; }
     .header__titulos {
       height: auto;
       text-align: center; }
     .header__titulo {
-      font-size: 100px; }
+      font-size: 80px; }
     .header__subtitulo {
-      font-size: 50px; }
+      font-size: 45px; }
     .header .navbar__lista {
-      flex-direction: row;
-      padding: 0; }
+      flex-direction: column;
+      padding-top: 25px; }
     .header .navbar__item {
       margin-bottom: 20px; }
       .header .navbar__item a {
-        font-size: 200px; } }
+        font-size: 20px; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .header {

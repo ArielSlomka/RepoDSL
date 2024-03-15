@@ -72,10 +72,12 @@
     .header {
         height: auto; // Ajustar la altura automáticamente
         padding: 80px 0; // Reducir el espacio vertical
+        
     
   
         .container {
             padding: 50px 0; // Reducir el espacio vertical
+            width: 100%;
         }
   
         &__titulos {
@@ -84,16 +86,16 @@
         }
   
         &__titulo {
-            font-size: 100px; // Reducir el tamaño del título
+            font-size: 80px; // Reducir el tamaño del título
         }
   
         &__subtitulo {
-            font-size: 50px; // Reducir el tamaño del subtítulo
+            font-size: 45px; // Reducir el tamaño del subtítulo
         }
   
         .navbar__lista {
-            flex-direction: row; // Colocar los elementos de la lista en una columna
-            padding: 0; // Eliminar el relleno horizontal
+            flex-direction: column; // Colocar los elementos de la lista en una columna
+            padding-top: 25px; // Eliminar el relleno horizontal
         }
   
         .navbar__item {
@@ -101,7 +103,7 @@
       
 
               a {
-                font-size: 200px;
+                font-size: 20px;
               }
         }  
     }

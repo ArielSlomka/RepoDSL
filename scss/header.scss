@@ -10,6 +10,10 @@
         justify-content: space-between;
         padding: 175px 0 60px;
         height: 100%;
+
+        @media (max-width: 768px) {
+            padding: 50px 0; // Reducir el espacio vertical
+        }
     }
 
     &__titulos {
@@ -72,6 +76,7 @@
     .header {
         height: auto; // Ajustar la altura automáticamente
         padding: 80px 0; // Reducir el espacio vertical
+<<<<<<< HEAD
         
     
   
@@ -79,6 +84,8 @@
             padding: 50px 0; // Reducir el espacio vertical
             width: 100%;
         }
+=======
+>>>>>>> dfed35390c2cec306f079aca8650978453364808
   
         &__titulos {
             height: auto; // Ajustar la altura automáticamente
@@ -100,17 +107,22 @@
   
         .navbar__item {
             margin-bottom: 20px; // Agregar espacio entre los elementos de la lista
-      
 
+<<<<<<< HEAD
               a {
                 font-size: 20px;
               }
+=======
+            a {
+                // font-size: 200px;
+            }
+>>>>>>> dfed35390c2cec306f079aca8650978453364808
         }  
     }
-  }
+}
   
-  // Para tablets
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+// Para tablets
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .header {
       padding: 120px 0; // Ajustar el espacio vertical
     }
@@ -118,4 +130,4 @@
     .container {
       padding: 100px 0; // Ajustar el espacio vertical
     }
-  }
+}

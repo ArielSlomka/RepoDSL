@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main {
   background-color: #EFEBE5; }
 
@@ -11,10 +12,40 @@ main {
     color: #623E2A;
     height: 350px;
     margin-top: 230px; }
-  .moduloMiTrabajo h4 {
-    padding: 20px;
-    font-size: 35px;
-    font-weight: normal; }
-  .moduloMiTrabajo p {
-    padding: 20px;
-    font-size: 18px; }
+    .moduloMiTrabajo__texto h4 {
+      padding: 20px;
+      font-size: 35px;
+      font-weight: normal; }
+    .moduloMiTrabajo__texto p {
+      padding: 20px;
+      font-size: 18px; }
+
+@media only screen and (max-width: 768px) {
+  .moduloMiTrabajo {
+    grid-template-columns: 1fr;
+    /* Cambia el diseño a una sola columna */
+    grid-template-rows: auto auto;
+    /* Permitir que las filas se ajusten automáticamente */
+    gap: 20px;
+    /* Reducir el espacio entre las filas */ }
+  .moduloMiTrabajo__imagen {
+    margin-top: 0;
+    /* Eliminar el margen superior de la imagen */ }
+  .moduloMiTrabajo__texto {
+    margin-top: 20px;
+    /* Añadir espacio entre la imagen y el texto */ } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .moduloMiTrabajo {
+    grid-template-columns: repeat(2, 1fr);
+    /* Vuelve al diseño de dos columnas */
+    grid-template-rows: auto;
+    /* Restaura el ajuste automático de las filas */
+    gap: 45px;
+    /* Restaura el espacio entre las columnas */
+    padding: 50px;
+    margin-bottom: 25px; }
+  .moduloMiTrabajo__texto {
+    margin-top: 0px;
+    /* Restaura el margen superior del texto */
+    font-size: 10px; } }

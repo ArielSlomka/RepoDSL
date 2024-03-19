@@ -2,7 +2,7 @@ main {
     background-color: #EFEBE5;
 }
 
-.moduloMiTrabajo {
+.modulo-mi-trabajo {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -19,7 +19,7 @@ main {
     // width: 200px;
     // justify-content: space-between;
     height: 350px;
-    margin-top: 230px;
+    margin: 230px 0 0 0;
     
 
             h4 {
@@ -38,31 +38,30 @@ main {
 
 
 @media only screen and (max-width: 768px) {
-    .moduloMiTrabajo {
+    .modulo-mi-trabajo {
         grid-template-columns: 1fr; /* Cambia el diseño a una sola columna */
-        grid-template-rows: auto auto; /* Permitir que las filas se ajusten automáticamente */
-        gap: 20px; /* Reducir el espacio entre las filas */
+        
     }
 
-    .moduloMiTrabajo__imagen {
-        margin-top: 0; /* Eliminar el margen superior de la imagen */
+    .modulo-mi-trabajo__imagen {
+        padding: 25px 0;
     }
 
-    .moduloMiTrabajo__texto {
-        margin-top: 20px; /* Añadir espacio entre la imagen y el texto */
+    .modulo-mi-trabajo__texto {
+        padding: 30px 0;
+        margin: 25px 0 45px 0;
+        height: 200px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .moduloMiTrabajo {
+    .modulo-mi-trabajo {
         grid-template-columns: repeat(2, 1fr); /* Vuelve al diseño de dos columnas */
-        grid-template-rows: auto; /* Restaura el ajuste automático de las filas */
-        gap: 45px; /* Restaura el espacio entre las columnas */
-        padding: 50px;
-        margin-bottom: 25px;
+        padding: 50px 0;
+        
     }
 
-    .moduloMiTrabajo__texto {
+    .modulo-mi-trabajo__texto {
         margin-top: 0px; /* Restaura el margen superior del texto */
         font-size: 10px;
     }

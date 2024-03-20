@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; }
+
+h1 {
+  text-align: center; }
+
+.formulario-contacto {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .formulario-contacto .campo {
+    margin-bottom: 20px; }
+    .formulario-contacto .campo label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold; }
+    .formulario-contacto .campo input[type="text"],
+    .formulario-contacto .campo input[type="email"],
+    .formulario-contacto .campo textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #999;
+      border-radius: 5px;
+      box-sizing: border-box; }
+    .formulario-contacto .campo textarea {
+      height: 100px; }
+  .formulario-contacto button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; }
+    .formulario-contacto button:hover {
+      background-color: #1a1a1a; }

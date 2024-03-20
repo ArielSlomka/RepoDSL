@@ -1,0 +1,62 @@
+$form-bg-color: #f4f4f4;
+$border-color: #ccc;
+$input-border-color: #999;
+$button-bg-color: #333;
+$button-color: #fff;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $form-bg-color;
+}
+
+h1 {
+    text-align: center;
+}
+
+.formulario-contacto {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .campo {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid $input-border-color;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: $button-bg-color;
+        color: $button-color;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: darken($button-bg-color, 10%);
+        }
+    }
+}

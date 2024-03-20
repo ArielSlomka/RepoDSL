@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
     <header class="header">
@@ -21,10 +22,10 @@
                         <a href="index.html">Inicio</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="acercaDeMi.html">Acerca de mi</a>
+                        <a href="acerca-de-mi.html">Acerca de mi</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="miTrabajo.html">Mi trabajo</a>
+                        <a href="mi-trabajo.html">Mi trabajo</a>
                     </li>
                     <li class="navbar__item">
                         <a href="galeria.html">Galeria</a>
@@ -33,7 +34,29 @@
             </nav>
         </div>
     </header>
+    <main>
+        <h1>Formulario de Contacto</h1>
 
+    <form action="#" method="POST" class="formulario-contacto">
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    </main>
     <footer class="footer">
         <div class="container">
             <h3 class="footer__title">D S L</h3>

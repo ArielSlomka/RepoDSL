@@ -40,7 +40,7 @@ main {
 @media only screen and (max-width: 768px) {
     .modulo-mi-trabajo {
         grid-template-columns: 1fr; /* Cambia el diseño a una sola columna */
-        
+        gap: 1px;
     }
 
     .modulo-mi-trabajo__imagen {
@@ -48,9 +48,8 @@ main {
     }
 
     .modulo-mi-trabajo__texto {
-        padding: 30px 0;
-        margin: 25px 0 45px 0;
-        height: 200px;
+        margin: 5px 0 0 0;
+        
     }
 }
 

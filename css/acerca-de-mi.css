@@ -1,30 +1,36 @@
 main {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/instrumentos123.jpg);
   background-size: cover;
-  background-position: center;
-  min-height: 100vh; }
+  background-position: center; }
 
 .acerca-de-mi {
   display: flex;
-  gap: 125px;
   align-items: center;
   flex-direction: column;
-  padding-top: 125px; }
+  padding: 120px 0; }
   .acerca-de-mi__titulo {
     color: #EFEBE5;
     text-align: center;
     font-size: 60px;
-    padding-top: 150px;
-    font-family: 'Times New Roman', Times, serif; }
-  .acerca-de-mi__textos {
-    gap: 150px;
-    display: flex; }
-  .acerca-de-mi__texto {
-    color: #EFEBE5;
     font-family: 'Times New Roman', Times, serif;
-    word-spacing: 4px;
-    justify-content: center;
-    font-size: 30px; }
+    margin-bottom: 80px; }
+  .acerca-de-mi__textos {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px; }
+  .acerca-de-mi__texto {
+    display: flex;
+    flex-direction: column; }
+    .acerca-de-mi__texto i {
+      color: #EFEBE5;
+      font-size: 48px;
+      margin: 0 auto 24px; }
+    .acerca-de-mi__texto p {
+      color: #EFEBE5;
+      font-family: 'Times New Roman', Times, serif;
+      word-spacing: 4px;
+      justify-content: center;
+      font-size: 18px; }
 
 @media only screen and (max-width: 768px) {
   .acerca-de-mi {

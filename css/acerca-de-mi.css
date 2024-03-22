@@ -7,12 +7,13 @@ main {
 .acerca-de-mi {
   display: flex;
   gap: 125px;
-  padding-top: 250px;
-  flex-direction: column; }
+  align-items: center;
+  flex-direction: column;
+  padding-top: 125px; }
   .acerca-de-mi__titulo {
     color: #EFEBE5;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     padding-top: 150px;
     font-family: 'Times New Roman', Times, serif; }
   .acerca-de-mi__textos {
@@ -22,13 +23,19 @@ main {
     color: #EFEBE5;
     font-family: 'Times New Roman', Times, serif;
     word-spacing: 4px;
-    justify-content: center; }
+    justify-content: center;
+    font-size: 30px; }
 
 @media only screen and (max-width: 768px) {
   .acerca-de-mi {
-    display: flex;
-    flex-direction: column;
     padding-top: 60px;
     gap: 75px; }
     .acerca-de-mi__titulo {
-      padding-top: 75px; } }
+      padding-top: 75px; }
+    .acerca-de-mi__textos {
+      display: flex;
+      flex-direction: column;
+      padding: 25px 25px 25px 45px; }
+    .acerca-de-mi__texto {
+      word-spacing: normal;
+      font-size: 20px; } }

@@ -3,34 +3,48 @@ main {
 
 }
 
-.container {
+.ds-container {
 
     padding: 25px;
+
+    .carousel-indicators {
+      bottom: 10px; // Posición desde la parte inferior
+    }
+    
+    // Estilo de los controles del carousel
+    .carousel-control { 
+      &-prev,
+      &-next {
+        width: 5%; // Tamaño deseado de los controles
+      }
+  
+      &-prev {
+        justify-content: flex-start;
+        left: -5%;
+      }
+  
+      &-next {
+        justify-content: flex-end;
+        right: -5%;
+      }
+    }
+    
+    // Estilo de las imágenes dentro del carousel
+    .carousel-item img {
+      height: 700px; // Altura deseada de las imágenes
+      object-fit: cover; // Ajuste de la imagen al contenedor
+    }
+    
+    // Estilo de los iconos de control previo y siguiente
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%); // Invertir los colores de los iconos
+      height: 3rem;
+      width: 3rem;
+    }
 }
 
 
 // Estilo de los indicadores del carousel
-.carousel-indicators {
-    bottom: 10px; // Posición desde la parte inferior
-  }
-  
-  // Estilo de los controles del carousel
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 5%; // Tamaño deseado de los controles
-  }
-  
-  // Estilo de las imágenes dentro del carousel
-  .carousel-item img {
-    height: 700px; // Altura deseada de las imágenes
-    object-fit: cover; // Ajuste de la imagen al contenedor
-  }
-  
-  // Estilo de los iconos de control previo y siguiente
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    filter: invert(100%); // Invertir los colores de los iconos
-    
-  }
 
  

@@ -1,0 +1,115 @@
+@import 'vars';
+
+.navbar {
+    display: flex;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(98, 62, 42, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 0;
+    z-index: 99;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+
+    &__lista {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0  120px;
+        width: 100%;
+        margin-bottom: 0;
+        height: max-content;
+        opacity: 0;
+        transition: .5s .5s;
+
+        &.show {
+            opacity: 1;
+        }
+    }
+
+    &__item {
+        display: inline;
+        font-family: $font;
+        padding: 10px 20px;
+       
+        a {
+            display: inline-block;
+            // background-color: rgba(98, 62, 42, 0.8);
+            color: #EFEBE5;
+            text-decoration: none;
+            transition: .5s;
+            border-radius: 5px;
+            font-size: 25px;
+            line-height: 28px;
+            position: relative;
+            
+            &::after {
+                content: "";
+                width: 0;
+                height: 1px;
+                background-color: rgb(164, 164, 164);
+                position: absolute;
+                bottom: -2px;
+                right: 0;
+                transition: .5s;
+            }
+            
+            &:hover {
+                // background-color: #555;
+                color: rgb(164, 164, 164);
+                
+                &::after {
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+// Media query para dispositivos móviles
+@media only screen and (max-width: 767px) {  
+    .navbar__lista {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar__item {
+        margin-bottom: 20px;
+
+        a {
+            transition: .5s;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+    }
+}
+
+
+  // Media query para tablets
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar__lista {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar__item {
+        margin-bottom: 30px;
+
+        a {
+            font-size: 20px;
+            transition: .5s;
+            border-radius: 5px;
+        }
+    }
+}

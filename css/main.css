@@ -3,14 +3,14 @@
   padding: 0;
   box-sizing: border-box; }
 
-.container {
+.ds-container {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 120px;
   padding-right: 120px; }
   @media (max-width: 767px) {
-    .container {
+    .ds-container {
       padding-left: 30px;
       padding-right: 30px; } }
 
